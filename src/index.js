@@ -9,13 +9,14 @@ export default function (options = {}) {
     options.include || [ '**/*.hbs', '**/*.handlebars', '**/*.mustache' ],
     options.exclude || 'node_modules/**'
   );
+  options.inlineSource = options.inlineSource || {};
   const sourceMap = options.sourceMap !== false;
 
   return {
     transform (code, id) {
       if(!filter(id)) return;
 
-      code = inlineSource.sync(id);
+      code = inlineSource.sync(id, options.inlineSource);
 
       return {
         code,

@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-inline-source",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A rollup plugin for the npm inline-source tool that inlines flagged js, css, and img sources in html",
   "main": "dist/rollup-plugin-inline-source.cjs.js",
   "jsnext:main": "dist/rollup-plugin-inline-source.es.js",

@@ -8,13 +8,14 @@ var index = function () {
 
   // module.exports = function (options = {}) {
   var filter = createFilter(options.include || ['**/*.hbs', '**/*.handlebars', '**/*.mustache'], options.exclude || 'node_modules/**');
+  options.inlineSource = options.inlineSource || {};
   var sourceMap = options.sourceMap !== false;
 
   return {
     transform: function transform(code, id) {
       if (!filter(id)) return;
 
-      code = inlineSource.sync(id);
+      code = inlineSource.sync(id, options.inlineSource);
 
       return {
         code: code,
