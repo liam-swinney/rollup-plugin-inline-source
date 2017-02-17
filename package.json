@@ -36,7 +36,7 @@
     "rollup-plugin-babel": "^2.7.1"
   },
   "dependencies": {
-    "inline-source": "^5.2.0",
+    "inline-source": "~4.0.1",
     "rollup-pluginutils": "^2.0.1"
   }
 }
