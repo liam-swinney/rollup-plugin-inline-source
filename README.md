@@ -4,7 +4,7 @@
 ## Install
 
 ```sh
-npm i rollup-plugin-hbsidom -D
+npm i rollup-plugin-inline-source -D
 ```
 
 ## Usage
