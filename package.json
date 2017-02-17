@@ -1,0 +1,42 @@
+{
+  "name": "rollup-plugin-inline-source",
+  "version": "1.0.0",
+  "description": "A rollup plugin for the npm inline-source tool that inlines flagged js, css, and img sources in html",
+  "main": "dist/rollup-plugin-inline-source.cjs.js",
+  "jsnext:main": "dist/rollup-plugin-inline-source.es.js",
+  "scripts": {
+    "build": "rollup -c -f cjs -o dist/rollup-plugin-inline-source.cjs.js && rollup -c -f es -o dist/rollup-plugin-inline-source.es.js"
+  },
+  "files": [
+    "src",
+    "dist",
+    "README"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liam-swinney/rollup-plugin-inline-source.git"
+  },
+  "author": "Liam Swinney <me@liamswinney.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liam-swinney/rollup-plugin-inline-source/issues"
+  },
+  "homepage": "https://github.com/liam-swinney/rollup-plugin-inline-source#readme",
+  "keywords": [
+    "rollup-plugin",
+    "es2015",
+    "inline",
+    "inline-source"
+  ],
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-register": "^6.23.0",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1"
+  },
+  "dependencies": {
+    "inline-source": "^5.2.0",
+    "rollup-pluginutils": "^2.0.1"
+  }
+}
